@@ -9,13 +9,12 @@ print("Servidor UDP esperando mensajes")
 preguntas = [
     {"pregunta": "1. ¿Cuanto es 13*9? ","respuesta": "117"},
     {"pregunta": "2. ¿Github permite control de versiones de software? ","respuesta": "si"},
-    {"pregunta": "3. ¿? ","respuesta": "JAVA"},
-    {"pregunta": "4. ¿Framework que permite manejar software por componentes independientes? ","respuesta": "REACT"},
-    {"pregunta": "5. ¿Que herramienta tecnologica centraliza la informacion y resuelve problemas internos en una empresa? ","respuesta": "ERPs"}
+    {"pregunta": "3. ¿Comando de git para una actualizacion del repositorio local? ","respuesta": "git pull"},
+    {"pregunta": "4. ¿Lenguaje de programacion de alto nivel mas conocido y usado por estudiantes? ","respuesta": "python"},
+    {"pregunta": "5. ¿Protocolo de comunicacion no orientada a la conexion? ","respuesta": "UDP"}
 ] 
 
 clientes_estado = {}
-
 
 def manejar_cliente(mensaje_bytes, direccion, servidor):
     mensaje = mensaje_bytes.decode().strip().lower()

@@ -18,7 +18,7 @@ try:
         print("\n" + mensaje)
         
         # Si el servidor indica que el cuestionario finalizó, rompemos el bucle
-        if "=== CUESTIONARIO FINALIZADO ===" in mensaje:
+        if " CUESTIONARIO FINALIZADO " in mensaje:
             break
             
         # Pedir la respuesta al usuario por consola
